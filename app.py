@@ -72,6 +72,6 @@ def handle_update():
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Run Flask app on specified port')
-    parser.add_argument('--port', type=int, default=5000, help='Port to run the app on')
+    parser.add_argument('--port', type=int, default=1612, help='Port to run the app on')
     args = parser.parse_args()
     socketio.run(app, debug=True, port=args.port)
